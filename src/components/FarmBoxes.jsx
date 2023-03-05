@@ -1,6 +1,6 @@
 import {Container, Box, Icon, Background, Title, Text, Button} from '../styles/farmBoxesStyles'
 import {LazyImg} from './MyImg'
-import {exploreFarm, exploreOpportunites} from '../consts/links'
+import {exploreFarm, exploreOpportunities} from '../consts/links'
 
 export default function FarmBoxes(){
     return(
@@ -33,7 +33,7 @@ export default function FarmBoxes(){
                 <Text>
                     Harvest is platform made for and run by the community. Join us on this adventure and find your place!
                 </Text>
-                <Button href={exploreOpportunites}>Explore Opportunites</Button>
+                <Button href={exploreOpportunities}>Explore Opportunites</Button>
             </Box>
         </Container>
     )

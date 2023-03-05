@@ -1,11 +1,14 @@
+const isProd = process.env.NEXT_PUBLIC_ENV === 'production';
+const harvestApp = isProd ? 'https://app.harvest.finance' : 'https://app.harvest-test.dev';
+
 export const navLinks = {
     tokenomics: 'https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics',
     statistics: 'https://dune.com/llama/Harvest-Finance',
     blog: 'https://medium.com/harvest-finance',
-    dashboard: 'https://app.harvest-test.dev/'
+    dashboard: harvestApp
 }
 
-export const startEarning = 'https://app.harvest-test.dev/';
+export const startEarning = harvestApp;
 
 export const companies = {
     asSeenOn: {
@@ -22,7 +25,7 @@ export const companies = {
 }
 
 export const exploreFarm = 'https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics';
-export const exploreOpportunites = 'https://app.harvest-test.dev/work';
+export const exploreOpportunities = harvestApp + '/work';
 
 export const media = {
     twitter: 'https://twitter.com/harvest_finance',
